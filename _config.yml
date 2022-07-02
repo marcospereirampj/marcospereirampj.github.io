@@ -55,7 +55,7 @@ comments:
 
 assets:
   self_host:
-    enabled: true
+    enabled: no
 
 pwa:
   enabled: true   # the option for PWA feature
