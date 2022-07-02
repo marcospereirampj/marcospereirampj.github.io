@@ -7,24 +7,18 @@
   type: twitter
   icon: 'fab fa-twitter'
 -
+  type: linkedin
+  icon: 'fab fa-linkedin'
+  url: 'https://www.linkedin.com/in/marcospereirampj'
+-
+  type: stack-overflow
+  icon: 'fab fa-stack-overflow'
+  url:  'https://stackoverflow.com/users/4913645/marcos-pereira-j%c3%banior'
+-
   type: email
   icon: 'fas fa-envelope'
-  noblank: true            # open link in current tab
+  noblank: true
 -
   type: rss
   icon: 'fas fa-rss'
   noblank: true
-
-# Uncomment and complete the url below to enable more contact options
-# -
-#   type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your mastodon account page
-# -
-#   type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-# -
-#   type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
