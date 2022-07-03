@@ -55,7 +55,7 @@ comments:
 
 assets:
   self_host:
-    enabled: true
+    enabled: false
     #env: development    
 
 pwa:
