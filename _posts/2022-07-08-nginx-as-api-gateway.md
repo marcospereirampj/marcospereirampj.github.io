@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using NGINX as API Gateway"
-date:   2022-07-04 19:00:00 +0300
+date:   2022-07-10 19:00:00 +0300
 tags: [nginx,api gateway,api]
 categories: devops
 image:  
