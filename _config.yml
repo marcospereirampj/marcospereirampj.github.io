@@ -3,7 +3,7 @@ theme: jekyll-theme-chirpy
 
 baseurl: '/'
 
-lang: pt-BR
+lang: en
 
 prefer_datetime_locale:
 
@@ -36,7 +36,7 @@ social:
 google_site_verification:
 
 google_analytics:
-  id:
+  id: 102414575
   pv:
     proxy_endpoint:
     cache_path:
