@@ -2,8 +2,10 @@
 layout: post
 title:  "Virtualenv: Ambiente virtuais isolados em Python"
 date:   2017-07-11 21:15:11 +0000
+tags: [python,virtualenv]
 categories: python
-image:  /preview.png
+image:  
+    path: assets/img/posts/python.png
 ---
 
 Um problema constante para desenvolvedores que estão envolvidos em vários projetos é a configuração do ambiente de desenvolvimento. É bastante comum projetos possuírem dependência da mesma biblioteca, porém com versões diferentes.

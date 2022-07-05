@@ -2,8 +2,10 @@
 layout: post
 title:  "Getting Started with Django 2"
 date:   2018-01-11 19:00:00 +0300
-categories: django
-image:  /images/posts/django.png
+tags: [python,django,getting started]
+categories: python
+image:  
+    path: assets/img/posts/django.png
 ---
 
 

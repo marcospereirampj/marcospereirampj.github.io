@@ -2,8 +2,10 @@
 layout: post
 title:  "Diário de uma Mudança: Parte 3 e 4 – Primeira Semana em Floripa e Lar Doce Lar"
 date:   2017-10-13 20:00:00 +0300
+tags: [general,personal]
 categories: general
-image:  /images/posts/floripa.jpg
+image:  
+    path: assets/img/posts/floripa.jpg
 ---
 
 
@@ -40,7 +42,5 @@ Visitei vários apartamentos e gostei de muitos deles, mas parecia que todo mund
 Felizmente, no fim encontrei um apartamento a cerca de 600 metros do trabalho (uma caminhada super agradável de menos de 10 minutos! :D ). Entretanto, o lado ruim é que ele estava vazio. Então, tive que arcar com a compra de vários móveis, eletros e itens de casa não previsto.
 
 Bom pessoal! É isso!
-
-Aqui encerramos essa série de postagens e voltamos a normalidade. Na próxima postagem falarei um pouco sobre **Microserviços**. Então, até lá!
 
 Abraços

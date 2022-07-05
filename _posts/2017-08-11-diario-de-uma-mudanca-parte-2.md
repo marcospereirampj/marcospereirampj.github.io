@@ -2,8 +2,10 @@
 layout: post
 title:  "Diário de uma Mudança: Parte 2 - Passagem Só de Ida"
 date:   2017-08-11 06:02:11 +0300
+tags: [general,personal]
 categories: general
-image:  /images/posts/aviao.jpg
+image:  
+    path: assets/img/posts/aviao.jpg
 ---
 
 Dando continuidade a história do processo de mudança de cidade/emprego que venho passando, na postagem dessa semana irei compartilhar com vocês como foi a etapa de saída de Maceió/AL. Compartilharei como uma reorganização financeira antecipada e a escolha da empresa certa facilitaram essa etapa.

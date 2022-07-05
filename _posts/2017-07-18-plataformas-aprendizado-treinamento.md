@@ -2,8 +2,8 @@
 layout: post
 title:  "Melhorando suas Habilidades: Práticas de Programação"
 date:   2017-07-18 00:10:11 +0300
+tags: [programming,learning]
 categories: programming
-image:  /preview.png
 ---
 
 Essa semana, eu e alguns amigos estamos em uma competição para saber quem resolver a maior quantidade de problemas na [CodeFights](https://codefights.com/signup/fGHtgqJBK8jhPDxoT/main). A partir daí, me veio a ideia de listar algumas plataformas que podem ajudar a praticar programação.
