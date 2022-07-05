@@ -22,4 +22,4 @@ Also, I tried using the standard project layout described [here](https://github.
 
 For the guys with suggestions for improvements, just send a [_PR_](https://github.com/marcospereirampj/golang-scaffolding/pulls) or create an [_issue_](https://github.com/marcospereirampj/golang-scaffolding/issues) in the project.
 
-Hugs :)
+See you later guys! :)
