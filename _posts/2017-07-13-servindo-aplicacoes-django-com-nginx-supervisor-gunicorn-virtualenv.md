@@ -32,7 +32,7 @@ Na solução, o **Gunicorn** deverá executar a aplicação **Python**.
 
 ### Virtualenv
 
-Como explicado do post ["Virtualenv: Ambiente virtuais isolados em Python"](http://marcospereirajr.com.br/python/2017/07/11/virtualenv-ambiente-virtuais-isolados-em-python.html), o **virtualenv** é uma ferramenta que permite a criação de ambientes virtuais isolados para projetos **Python**. Ela auxilia na gestão de dependência, garantindo que um projeto não interfira no outro.
+Como explicado do post ["Virtualenv: Ambiente virtuais isolados em Python"](https://marcospereirajr.com.br/posts/virtualenv-ambiente-virtuais-isolados-em-python/), o **virtualenv** é uma ferramenta que permite a criação de ambientes virtuais isolados para projetos **Python**. Ela auxilia na gestão de dependência, garantindo que um projeto não interfira no outro.
 
 # Configurando Serviço
 
@@ -60,7 +60,7 @@ Os diretórios criados tem os seguintes objetivos:
 
 ### Configuração da virtualenv
 
-O primeiro passo que realizaremos é a configuração da **virtualenv**. Sendo assim, deveremos criar uma virtual dentro do diretório *"env"*. Caso ainda não saiba como fazer, leia a postagem ["Virtualenv: Ambiente virtuais isolados em Python"](http://marcospereirajr.com.br/python/2017/07/11/virtualenv-ambiente-virtuais-isolados-em-python.html).
+O primeiro passo que realizaremos é a configuração da **virtualenv**. Sendo assim, deveremos criar uma virtual dentro do diretório *"env"*. Caso ainda não saiba como fazer, leia a postagem ["Virtualenv: Ambiente virtuais isolados em Python"](https://marcospereirajr.com.br/posts/virtualenv-ambiente-virtuais-isolados-em-python/).
 
 Posteriormente, instale as dependências do seu projeto utilizando o `pip`.
 
