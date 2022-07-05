@@ -5,7 +5,7 @@ date:   2017-10-13 20:00:00 +0300
 tags: [general,personal]
 categories: general
 image:  
-    path: assets/img/posts/floripa.jpg
+    path: /assets/img/posts/floripa.jpg
 ---
 
 

@@ -5,7 +5,7 @@ date:   2017-07-11 23:14:11 +0000
 tags: [python,django,migrations,database]
 categories: python
 image:  
-    path: assets/img/posts/django.png
+    path: /assets/img/posts/django.png
 ---
 
 Criar, alterar ou remover as estruturas ou dados de um banco de dados manualmente sempre foi uma atividade de alto risco e demorada. Mesmo com a realização de backups, uma alteração incorreta em uma base de dados (de produção!) pode trazer muita dor de cabeça para a equipe de desenvolvimento e infraestrutura.

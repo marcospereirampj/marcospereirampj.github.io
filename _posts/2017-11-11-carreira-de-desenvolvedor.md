@@ -5,7 +5,7 @@ date:   2017-11-11 07:00:00 +0300
 tags: [general,personal,career]
 categories: general
 image:  
-    path: assets/img/posts/canoinhas.jpg
+    path: /assets/img/posts/canoinhas.jpg
 ---
 
 

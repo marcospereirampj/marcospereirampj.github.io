@@ -5,7 +5,7 @@ date:   2018-01-11 19:00:00 +0300
 tags: [python,django,getting started]
 categories: python
 image:  
-    path: assets/img/posts/django.png
+    path: /assets/img/posts/django.png
 ---
 
 

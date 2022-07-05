@@ -5,7 +5,7 @@ date:   2022-07-04 19:00:00 +0300
 tags: [golang,getting started,scaffolding,uber-fx,go-chi]
 categories: golang
 image:  
-    path: assets/img/posts/golang.jpeg
+    path: /assets/img/posts/golang.jpeg
 ---
 
 Hello guys! We're back!

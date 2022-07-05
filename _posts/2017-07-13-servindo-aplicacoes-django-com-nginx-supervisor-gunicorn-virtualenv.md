@@ -4,8 +4,6 @@ title:  "Servindo Aplicações Django com NGINX + Supervisor + Gunicorn + Virtua
 date:   2017-07-13 22:16:11 +0000
 tags: [python,django,migrations,database]
 categories: python
-image:  
-    path: assets/img/posts/arquitetura.png
 ---
 
 Existem diversas maneiras de disponibilizar aplicações web escritas em **Python**. Atualmente tenho utilizado bastante a solução que combina o uso do `NGINX`, `Supervisor`, `Gunicorn` e `virtualenv`.
@@ -40,7 +38,7 @@ Como explicado do post ["Virtualenv: Ambiente virtuais isolados em Python"](http
 
 Feita as apresentações, podemos iniciar a configuração da solução. A arquitetura que montaremos é melhor apresentada na imagem a seguir.
 
-![Arquitetura da Solução. Fonte: http://pt.slideshare.net/allysonbarros/apresentao-sobre-a-cosinf](/images/posts/arquitetura.png)
+![Arquitetura da Solução. Fonte: http://pt.slideshare.net/allysonbarros/apresentao-sobre-a-cosinf](/assets/img/posts/arquitetura.png)
 
 Para facilitar a manutenção da aplicação, deveremos organizar os diretórios do projeto da seguinte forma:
 

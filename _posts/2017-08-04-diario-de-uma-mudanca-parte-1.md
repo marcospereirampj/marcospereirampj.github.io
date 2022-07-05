@@ -5,7 +5,7 @@ date:   2017-08-03 05:00:11 +0300
 tags: [general,personal]
 categories: general
 image:  
-    path: assets/img/posts/agriness.jpg
+    path: /assets/img/posts/agriness.jpg
 ---
 
 Há pouco mais de um mês, saí da minha cidade natal, Maceió/AL, e me mudei definitivamente para Florianópolis/SC. Deixei para trás família, amigos, casa, conforto e antigo emprego para enfrentar um novo desafio.
