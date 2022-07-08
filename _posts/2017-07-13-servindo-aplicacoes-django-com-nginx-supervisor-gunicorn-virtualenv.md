@@ -42,14 +42,14 @@ Feita as apresentações, podemos iniciar a configuração da solução. A arqui
 
 Para facilitar a manutenção da aplicação, deveremos organizar os diretórios do projeto da seguinte forma:
 
-{% highlight shell %}
+```
 |-- /var/www/
    |-- {projeto}
       |-- config
       |-- logs
       |-- env
       |-- public
-{% endhighlight %}
+```
 
 Os diretórios criados tem os seguintes objetivos:
 
@@ -68,18 +68,18 @@ Posteriormente, instale as dependências do seu projeto utilizando o `pip`.
 
 Para configurar o **Gunicorn** deveremos primeiro instalá-lo na **virtualenv** do projeto. Para isso utilize o pip da **virtualenv**.
 
-{% highlight shell %}
-$ pip install gunicorn
-{% endhighlight %}
+```sh
+pip install gunicorn
+```
 
 Agora deveremos criar o arquivo de configuração do **Gunicorn** dentro do diretório *"config"*. Iremos criar o arquivo *"gunicorn_config.conf"*. Nesse arquivo deveremos adicionar o seguinte trecho de código:
 
-{% highlight shell %}
+```conf
 command = '/var/www/{projeto}/env/{nome_da_virtualenv}/bin/gunicorn'
 pythonpath = '/var/www/{projeto}/env/{nome_da_virtualenv}/'
 bind = '{endereco_porta_configurado_gunicorn}'
 workers = 2
-{% endhighlight %}
+```
 
 Em resumo, o trecho acima indica o comando que deverá ser executado, o diretório do **Python**, o endereço do socket e o número de processos que deverão ser utilizados. Esse arquivo será utilizado pelo **Supervisor**.
 
@@ -87,28 +87,28 @@ Em resumo, o trecho acima indica o comando que deverá ser executado, o diretór
 
 Para configurar o **Supervisor** deveremos criar o arquivo *"supervisor.conf"* no diretório *"config"* e adicionar o seguinte trecho:
 
-{% highlight shell %}
+```conf
 [program:{projeto}]
 command=/var/www/{projeto}/env/{nome_da_virtualenv}/bin/gunicorn -c /var/www/{projeto}/config/gunicorn_config.py {wsgi_do_projeto_django}:application
 directory=/var/www/{projeto}/public/
 stderr_logfile=/var/www/{projeto}/logs/long.err.log
 stdout_logfile=/var/www/{projeto}/logs/long.out.log
-{% endhighlight %}
+```
 
 O trecho acima indica ao **Supervisor** qual commando será executado, o diretório onde ele será executado e a localização dos arquivos de log/out. Percebam que o comando a ser executado é referente ao **Gunicorn**.
 
 Após criar o arquivo de configuração do **Supervisor**, devemos habilitá-lo. Para isso, deveremos adicionar o caminho do arquivo na seção *"include"* em *"/etc/supervisor/supervisor.conf"*. Posteriormente reinicie o serviço *Supervisor*.
 
-{% highlight shell %}
+```conf
 [include]
 files = /var/www/{projeto}/config/supervisor.conf
-{% endhighlight %}
+```
 
 ### Configuração do NGINX
 
 Por fim, deveremos configurar o **NGINX**. Ele funcionará somente como um proxy reverso.
 
-{% highlight shell %}
+```nginx
   server {
         server_name www.dominio.com;
 
@@ -127,16 +127,16 @@ Por fim, deveremos configurar o **NGINX**. Ele funcionará somente como um proxy
                 add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
         }
   }
-{% endhighlight %}
+```
 
 O trecho acima deverá ser adicionado a um arquivo dentro do diretório do **NGINX**, *"/etc/nginx/sites-available/"*.
 
 Logo após deveremos habilitar a configuração criando um link simbólico em *"/etc/nginx/sites-enable/"* para o arquivo que acabamos criar (ou simplesmente adicionar o arquivo criado diretamente no diretório
 *"/etc/nginx/sites-enable/"* - mas não recomendo).
 
-{% highlight shell %}
-$ ln -s /etc/nginx/sites-available/{projeto}.conf {projeto}.conf
-{% endhighlight %}
+```sh
+ln -s /etc/nginx/sites-available/{projeto}.conf {projeto}.conf
+```
 
 Na configura do **NGINX** existe uma série de configurações de proxy, tentarei comentar sobre essas
 configurações em um outro post.
