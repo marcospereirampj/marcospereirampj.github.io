@@ -26,32 +26,32 @@ Como dita na [própria documentação](https://virtualenv.pypa.io/en/latest/inde
 
 A instalação da **virtualenv** é extremamente prática e simples (no ambiente Linux). Para começo, precisamos instalar o gerenciador de pacotes pip (comando testado no Ubuntu).
 
-{% highlight shell %}
-$ sudo apt-get install python-pip python-dev build-essential
-{% endhighlight %}
+```sh
+sudo apt-get install python-pip python-dev build-essential
+```
 
 Para versões do Ubuntu anteriores a 10.10, o procedimento muda um pouco e pode ser visto [aqui](http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/).
 
 Feita a instalação do pip, podemos instalar a **virtualenv**.
 
-{% highlight shell %}
-$ blog@marcospereira:~/$ sudo pip install --upgrade virtualenv
-{% endhighlight %}
+```sh
+blog@marcospereira:~/$ sudo pip install --upgrade virtualenv
+```
 
 #### 2º Passo: Criação e Ativação de Ambientes Virtuais
 
 Com a virtualenv instalada, agora podemos começar a criar os ambientes virtuais para projetos Python. Vamos criar um ambiente:
 
-{% highlight shell %}
-$ blog@marcospereira:~/$ virtualenv AmbienteVirtual
-{% endhighlight %}
+```sh
+blog@marcospereira:~/$ virtualenv AmbienteVirtual
+```
 
 Após a execução do comando acima, será criado um novo diretório contendo a estrutura do Python (sites-packages, bin, include, etc). Podemos carregar o ambiente criado executando o arquivo `activate` que fica dentro do diretório bin da nova estrutura criada.
 
-{% highlight shell %}
-$ blog@marcospereira:~/$ source AmbienteVirtual/bin/activate
-$ (AmbienteVirtual) blog@marcospereira:~/$
-{% endhighlight %}
+```sh
+blog@marcospereira:~/$ source AmbienteVirtual/bin/activate
+(AmbienteVirtual) blog@marcospereira:~/$
+```
 
 A partir daí você estará trabalhando no ambiente criado e o prompt do seu shell indicará qual é este ambiente. No nosso caso, é o `AmbienteVirtual`.
 
@@ -59,9 +59,9 @@ A partir daí você estará trabalhando no ambiente criado e o prompt do seu she
 
 Estando o ambiente virtual ativado, todas as instalações de pacotes Python afetarão somente esse ambiente. Sendo assim, para instalar um pacote, basta utilizar o pip.
 
-{% highlight shell %}
-$ (AmbienteVirtual) blog@marcospereira:~/$ pip install NomeDoPacote
-{% endhighlight %}
+```sh
+(AmbienteVirtual) blog@marcospereira:~/$ pip install NomeDoPacote
+```
 
 ### Como Organizar?
 
@@ -71,23 +71,23 @@ Instale somente os pacotes essenciais ao projeto. Muitas vezes instalamos pacote
 
 Então, sempre monitore os pacotes instalados no seu ambiente. Para isso você pode utilizar o comando:
 
-{% highlight shell %}
-$ (AmbienteVirtual) blog@marcospereira:~/$ pip freeze
-{% endhighlight %}
+```sh
+(AmbienteVirtual) blog@marcospereira:~/$ pip freeze
+```
 
 Para direcionar a saída para um arquivo, utilize:
 
-{% highlight shell %}
-$ (AmbienteVirtual) blog@marcospereira:~/$ pip freeze > requirements.txt
-{% endhighlight %}
+```sh
+(AmbienteVirtual) blog@marcospereira:~/$ pip freeze > requirements.txt
+```
 
 Esse comando gera uma lista de pacotes instalados e suas versões. Em geral, adicionamos ao projeto o arquivo `requirements.txt` com essa listagem para que outros desenvolvedores saibam quais pacotes o projeto necessita.
 
 Para instalar os pacotes a partir de um arquivo `requirements.txt`, utilize o comando:
 
-{% highlight shell %}
-$ (AmbienteVirtual) blog@marcospereira:~/$ pip install -r requirements.txt
-{% endhighlight %}
+```sh
+(AmbienteVirtual) blog@marcospereira:~/$ pip install -r requirements.txt
+```
 
 Com vários ambientes virtuais instalados, você pode facilitar sua vida através da extensão `virtualenvwrapper`. Alguns das funcionalidades do `virtualenvwrapper` são:
 
