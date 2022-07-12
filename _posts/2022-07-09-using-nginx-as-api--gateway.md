@@ -59,14 +59,14 @@ server {
    # Products API
    #
    location /api/products {
-       proxy_pass http://container_products_api:8001;
+       proxy_pass http://products_api:8001;
    }
  
    #
    # Users API
    #
    location /api/users {
-       proxy_pass http://container_users_api:8002;
+       proxy_pass http://users_api:8002;
    }
 }
 
@@ -104,7 +104,7 @@ upstream products_api_server {
 }
  
 upstream users_api_server {
-       server container_users_api:8002;
+       server users_api:8002;
 }
 ```
 
