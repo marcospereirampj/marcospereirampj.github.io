@@ -280,7 +280,7 @@ upstream users_api_server {
  
 proxy_cache_path /tmp/products levels=1:2 keys_zone=products_cache:10m max_size=10g inactive=60m use_temp_path=off;
 limit_req_zone $binary_remote_addr zone=products_rate:10m rate=1r/s;
-limit_req_zone $binary_remote_addr zone=user_rate:10m rate=1r/s;
+limit_req_zone $binary_remote_addr zone=user_rate:10m rate=10r/s;
  
  
 server {
@@ -312,7 +312,7 @@ server {
 
 - Key – Defines the request characteristic against which the limit is applied. In the example it is the NGINX variable `$binary_remote_addr`, which holds a binary representation of a client’s IP address. This means we are limiting each unique IP address to the request rate defined by the third parameter.
 - Zone – Defines the shared memory zone used to store the state of each IP address and how often it has accessed a request‑limited URL. Keeping the information in shared memory means it can be shared among the NGINX worker processes.
-- Rate – Sets the maximum request rate. In the example, the rate cannot exceed 1 request per second for Users API and 10 requests per second for Products API.
+- Rate – Sets the maximum request rate. In the example, the rate cannot exceed 10 request per second for Users API and 1 requests per second for Products API.
 
 
 By default, NGINX will return 503 (Service Temporarily Unavailable) when the request limit is reached. To improve this, we use `limit_req_status` to customize the response status code. In this case we use 429 (Too Many Requests).
